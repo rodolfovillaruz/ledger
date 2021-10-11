@@ -17,7 +17,9 @@ FROM ubuntu
 RUN bash -c '\
   ln -fs /usr/share/zoneinfo/Asia/Manila /etc/localtime && \
   apt-get update && \
-  apt-get install -y libedit-dev \
+  apt-get install -y \
+    bc \
+    libedit-dev \
     libboost-date-time-dev \
     libboost-filesystem-dev \
     libboost-iostreams-dev \
